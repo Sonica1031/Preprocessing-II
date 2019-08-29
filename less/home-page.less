@@ -1,4 +1,26 @@
+.headerFlex{
+  .flexZone(space-between, center);
+     max-width: 1000px;
+     width: 100%;
+     border-bottom: 2px dashed @navigation-border;
+     padding: 10px;
+
+     @media(@Mobile){
+       text-align: center;
+       flex-direction: column;
+     }
+}
+
 .home {
+
+  .funBusImg{
+    padding: 5px;
+   }
+
+   .text{
+     border-bottom: 2px dashed @navigation-border;
+     margin: 10px;
+   }
 
   .content-section {
     margin: 30px 0;
@@ -6,16 +28,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media(@Mobile){
+      .flexZone;
+      .column;
+      max-width: 800px;
+      width: @wi;
+      flex-wrap: none;
+    }
+  
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media(@Mobile){
+        padding: 0;
+        width: @wi;
+        text-align: justify;
+      }
+    }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media(@Mobile){
+        padding: 0;
+        width: @wi;
 
       img {
         border-radius: 10px;
@@ -27,25 +67,60 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+      @media(@Mobile){
+      .flexZone;
+      flex-direction: column-reverse;
+      max-width: 800px;
+      width: 100%;
+      flex-wrap: none;
+      }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media(@Mobile){
+        padding: 0;
+        text-align: justify;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media(@Mobile){
+        padding: 0;
+        width: @wi;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    
+    @media(@Mobile){
+      .flexZone;
+      .column;
+      max-width: 800px;
+      width: 100%;
+      flex-wrap: none;
+      text-align: justify;
+    }
 
     img {
       border-radius: 10px;
     }
   }
+
+  .destination{
+    .btn{
+      .buttonEasy;
+      justify-items: center;
+      width: 90%;
+      margin: 10px;
+      }
+    }
 
   .content-pick {
     padding-top: 30px;
@@ -53,9 +128,28 @@
     display: flex;
     justify-content: space-between;
 
+    @media(@Mobile){
+      .flexZone;
+      .column;
+      max-width: 800px;
+      width: 100%;
+      flex-wrap: none;
+      text-align: justify;
+    }
+  }
+
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media(@Mobile){
+        .flexZone(center, center);
+        .column;
+        padding: 0;
+        width: 90%;
+        margin: 5%;
+        text-align: justify;
     }
   }
 }// home
