@@ -9,13 +9,36 @@
        text-align: center;
        flex-direction: column;
      }
+       .animated{
+        animation: YellowBus 5s 1;
+
+        @keyframes YellowBus{
+        10%{
+          border-top: @yellow;
+        }
+        20%{
+            border-right: @yellow;
+        }
+        30%{
+          border-bottom: @yellow;
+        }
+        40%{
+          border-left: @yellow;
+        }
+    
+        90% {
+          border: @yellow;
+          .YellowBus(300px);
+        }
+       }
+     }
 }
 
 .home {
 
   .funBusImg{
     padding: 5px;
-   }
+  }
 
    .text{
      border-bottom: 2px dashed @navigation-border;

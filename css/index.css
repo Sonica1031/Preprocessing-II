@@ -218,6 +218,27 @@ nav ul li a {
     flex-direction: column;
   }
 }
+.headerFlex .animated {
+  animation: YellowBus 5s 1;
+}
+@keyframes YellowBus {
+  10% {
+    border-top: 4px solid yellow;
+  }
+  20% {
+    border-right: 4px solid yellow;
+  }
+  30% {
+    border-bottom: 4px solid yellow;
+  }
+  40% {
+    border-left: 4px solid yellow;
+  }
+  90% {
+    border: 4px solid yellow;
+    margin-left: 300px;
+  }
+}
 .home .funBusImg {
   padding: 5px;
 }
