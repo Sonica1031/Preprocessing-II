@@ -1,1 +1,25 @@
 // Mixins in here
+
+.flexZone(@justify: space-around; @align: center;){
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.buttonEasy(@buttonColor: teal; @w: 150px;){
+    .flexZone;
+    background-color: @buttonColor;
+    width: @w;
+    color: white;
+    font-size: 2rem;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.YellowBus(@marg){
+    margin-left: @marg
+}
